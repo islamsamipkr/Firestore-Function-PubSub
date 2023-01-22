@@ -1,5 +1,8 @@
 from google.cloud import pubsub_v1
 import json
+
+publisher=pubsub_v1.PublisherClient()
+
 def hello_firestore(event, context):
      """Triggered by a change to a Firestore document.
      Args:
